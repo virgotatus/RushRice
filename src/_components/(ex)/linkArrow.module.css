@@ -1,0 +1,19 @@
+.linkArrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+.linkArrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.linkArrow:hover::after {
+  content: "-->";
+  margin-left: 10px;
+}
+
+

@@ -1,0 +1,41 @@
+.navfix {
+  @apply w-full;
+  position: fixed;
+}
+
+.navbar {
+  @apply px-12 mx-24 my-12 bg-[rgb(244,127,40)] rounded-full;
+  @apply lg:flex lg:justify-between;
+}
+
+.collapse__Expanded {
+  @apply shadow-md lg:shadow-none;
+}
+
+.navHeader {
+ @apply flex items-center gap-3 justify-between;
+}
+
+.navContanter {
+  @apply flex items-center justify-end max-h-0 overflow-hidden opacity-0 ; /* collapsed */
+  transition: all 0.5s ease-in-out;
+  @apply lg:my-auto lg:max-h-3 lg:overflow-visible lg:opacity-100;
+}
+
+.navList {
+  @apply lg:flex lg:flex-row lg:gap-3 ;
+}
+
+.collapse__Expanded .navContanter {
+  @apply m-3 max-h-64 opacity-100;
+}
+
+.collapseToggler {
+  @apply w-16 h-16 flex justify-center items-center bg-slate-100 rounded-full;
+  @apply lg:hidden
+}
+
+.collapse__Expanded .collapseToggler {
+  @apply shadow-md;
+}
+

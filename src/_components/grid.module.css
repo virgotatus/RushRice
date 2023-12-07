@@ -1,0 +1,71 @@
+.cusGrid {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: 
+  "header header" 
+  "sidebar main" 
+  "footer footer";
+  grid-gap: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.gridLayout {
+  @apply grid;
+}
+.grid12 {
+  @apply  grid-cols-2 gap-3;
+}
+
+@media screen and (max-width: 768px) {
+  .grid12 {
+    @apply grid-cols-1;
+  }
+
+  .cusGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+  }
+  
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .cusGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header" 
+    "sidebar main" 
+    "footer footer";
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .cusGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header ." 
+    "sidebar main ." 
+    "footer footer .";
+  }
+}
+

@@ -1,0 +1,24 @@
+.payCardList  {
+  list-style-image: url("../assets/tick-svgrepo-com.svg");
+  padding-left: 3rem;
+  list-style-type:square;
+}
+
+.payCardList .payCardListItem {
+  @apply text-blue-950 font-semibold mt-6;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.payCardHeader {
+  position: relative;
+}
+.popular .payCardHeader::before {
+  content: url("../assets/react.svg");
+  display: inline-block;
+  position: absolute;
+  width: 36px;
+  top: 0;
+  right: 10%;
+  background-color: transparent;
+}
