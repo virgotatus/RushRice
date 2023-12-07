@@ -4,7 +4,7 @@ const Testimonials = () => {
       <div className="p-12 shadow-md rounded-lg ">
         <div className="grid lg:grid-cols-2 md:grid-cols-1">
           <div className="relative">
-            <img className="w-full" src="images/rice.jpg" alt="fried rice" />
+            <img className="w-full" src="/rice.jpg" alt="fried rice" />
             <span
               className="absolute -right-8 top-1/3 inline-flex w-16 h-16
               justify-center items-center text-5xl 

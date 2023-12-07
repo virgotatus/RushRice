@@ -26,8 +26,8 @@ const Hero = () => {
           </button>
         </div>
       </section>
-      <div>
-        <img src="images/screen-removebg-preview.png" alt="hero" />
+      <div className="flex items-center">
+        <img src="/screen-removebg-preview.png" alt="hero" />
       </div>
     </div>
   );
