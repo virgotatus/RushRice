@@ -13,14 +13,14 @@ const Domain = () => {
           <br></br> 移动炒饭摊，城市会客厅
         </p>
       </section>
-      <section className="flex justify-center flex-col text-center">
+      <section className="text-center mx-20">
         <div className="border-0 shadow-lg rounded-full sm:w-full w-3/4 flex mx-auto">
           <input
             placeholder="eat..."
             className="px-8 flex-1 outline-0 rounded-full focus:border-0"
           ></input>
           <button
-            className="rounded-full bg-[--color-accent] 
+            className=" rounded-full bg-[--color-accent] 
                px-12 py-4 uppercase
               text-[white]
               "
