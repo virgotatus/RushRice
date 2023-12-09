@@ -7,7 +7,7 @@ import LinkArrow from "./_components/(ex)/linkArrow";
 import Badge from "./_components/Badge";
 import Lists from "./_components/(ex)/Lists";
 import Buttons from "./_components/(ex)/Buttons";
-import Testimonials from "./_components/Testimonials";
+import Testimonial from "./_components/Testimonial";
 import Collapse from "./_components/Collapse";
 import ExText from "./_components/ExText";
 import Plan from "./_components/Plan";
@@ -28,7 +28,7 @@ const Example = () => {
       <Lists />
       <Buttons />
       <Plan />
-      <Testimonials />
+      <Testimonial />
       <Collapse heading={"item1"} items={["Home", "Weding Party", "Travel"]} />
     </>
   );

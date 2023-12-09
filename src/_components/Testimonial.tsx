@@ -1,4 +1,4 @@
-const Testimonials = () => {
+const Testimonial = () => {
   return (
     <div className="my-48 px-12 py-24 shadow-2xl rounded-lg ">
       <div className="grid lg:grid-cols-2 md:grid-cols-1">
@@ -29,4 +29,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Testimonial;
