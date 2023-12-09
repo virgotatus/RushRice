@@ -1,53 +1,50 @@
 import Badge from "./Badge";
 import style from "./PayCard.module.css";
+interface Props {
+  plan: string;
+  price: number;
+  description: string;
+  features: string[];
+  popular?: boolean;
+}
 
-const PayCard = () => {
+const PayCard = ({ plan, price, description, features, popular }: Props) => {
   return (
-    <div>
-      <div className={style.popular + " w-1/2 shadow-lg"}>
-        <div
-          id="pay_card_header"
-          className={
-            style.payCardHeader +
-            " bg-[--color-primary] h-60 \
-             rounded-md flex flex-col \
-             justify-center"
-          }
-        >
-          <div className="ml-8">
-            <p className="font-bold text-white">Business</p>
-            <div className="inline-flex items-center gap-3 mt-5 mb-5">
-              <span className="text-7xl text-white">$24 </span>
-              <span className="text-white">/month </span>
-              <span className=" text-[12px] px-2 py-1">
-                <Badge text="20% OFF" />
-              </span>
-            </div>
-            <p className="text-slate-300 opacity-60 text-md whitespace-nowrap">
-              Optimal Cloud Experience
-            </p>
+    <div className={(popular ? style.popular : "") + " w-2/3 shadow-lg"}>
+      <div
+        id="pay_card_header"
+        className={
+          `${style.payCardHeader} h-80 rounded-md flex flex-col justify-center` +
+          (popular ? " bg-[--color-primary]" : " bg-[--color-headings]")
+        }
+      >
+        <div className="ml-12">
+          <p className="font-bold text-white">{plan}</p>
+          <div className="inline-flex items-center gap-3 mt-5 mb-5">
+            <span className="text-7xl text-white">￥{price} </span>
+            <span className="text-white">/month </span>
+            <span className=" text-[12px] px-2 py-1">
+              <Badge text="20% OFF" />
+            </span>
           </div>
-        </div>
-        <div id="pay_card_body" className="h-80 ml-8">
-          <ul className={style.payCardList}>
-            <li className={style.payCardListItem}>Unlimited Websites</li>
-            <li className={style.payCardListItem}>Unlimited Bandwidth</li>
-            <li className={style.payCardListItem}>100 GB SSD Storage</li>
-          </ul>
+          <p className="text-slate-300 opacity-60 text-md whitespace-nowrap">
+            {description}
+          </p>
         </div>
       </div>
-      <div className="text-blue-500">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="20px"
-          height="20px"
-        >
-          <path
-            fill="currentColor"
-            d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"
-          />
-        </svg>
+      <div id="pay_card_body" className=" m-12 flex flex-col">
+        <div>
+          <ul className={style.payCardList}>
+            {features.map((feature) => (
+              <li className={style.payCardListItem}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="m-12 w-full mb-16 items-center">
+          <button className="border-2 border-[--color-headings] rounded-full px-32 py-4 uppercase">
+            Buy Now
+          </button>
+        </div>
       </div>
     </div>
   );

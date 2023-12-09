@@ -1,6 +1,6 @@
 const Domain = () => {
   return (
-    <div className="mt-96">
+    <div className="mt-96 lg:mt-72">
       <section className="text-center">
         <h1 className="text-[--color-headings] text-5xl font-semibold">
           {" "}
@@ -8,24 +8,24 @@ const Domain = () => {
         </h1>
         <p className="text-slate-700 my-8">
           {" "}
-          beef, rice, Sichuan bean , Wanderful porper gam, fantastic smell
+          beef, rice, Sichuan bean , Wanderful porper gam, Mushroom, Fantastic
+          smell
           <br></br> 移动炒饭摊，城市会客厅
         </p>
       </section>
       <section className="flex justify-center flex-col text-center">
-        <div className="border-0 shadow-lg rounded-full w-3/4 flex mx-auto">
+        <div className="border-0 shadow-lg rounded-full sm:w-full w-3/4 flex mx-auto">
           <input
-            placeholder="www..."
+            placeholder="eat..."
             className="px-8 flex-1 outline-0 rounded-full focus:border-0"
           ></input>
           <button
-            className="rounded-full fl
-               bg-[--color-accent] 
+            className="rounded-full bg-[--color-accent] 
                px-12 py-4 uppercase
               text-[white]
               "
           >
-            <div className="flex flex-nowrap items-center">
+            <div className="flex items-center ">
               <svg
                 width="50px"
                 height="50px"
@@ -58,12 +58,12 @@ const Domain = () => {
                   stroke-width="2"
                 />
               </svg>
-              <span>Search</span>
+              <span>order</span>
             </div>
           </button>
         </div>
         <div className="mt-12">
-          <ul className="inline-grid gap-3 grid-cols-2 lg:grid-cols-4">
+          <ul className="inline-grid gap-3 sm:grid-cols-1 grid-cols-2 lg:grid-cols-4">
             <li>
               <a href="$" className="btn__secondary">
                 Fried Rice

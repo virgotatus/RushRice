@@ -1,0 +1,5 @@
+.panelBg {
+  @apply bg-rose-950 left-0 h-[150%] lg:h-[110%]
+  -z-10 absolute w-full pointer-events-none;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+}

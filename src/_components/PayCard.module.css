@@ -1,7 +1,6 @@
 .payCardList  {
   list-style-image: url("../assets/tick-svgrepo-com.svg");
   padding-left: 3rem;
-  list-style-type:square;
 }
 
 .payCardList .payCardListItem {

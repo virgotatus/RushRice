@@ -22,7 +22,6 @@
 @layer base{
   html {
     font-size: 62.5%;
-    @apply h-[5500px];
   }
   main {
     @apply mx-24;
@@ -65,7 +64,6 @@
     padding-left: 0;
   }
   .list__item {
-    @apply mr-4;
     display: inline-block;
   }
   .btn__secondary {

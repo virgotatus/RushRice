@@ -8,7 +8,7 @@ import Badge from "./_components/Badge";
 import Lists from "./_components/(ex)/Lists";
 import Buttons from "./_components/(ex)/Buttons";
 import PayCard from "./_components/PayCard";
-import Testimonials from "./_components/testimonials";
+import Testimonials from "./_components/Testimonials";
 import Collapse from "./_components/Collapse";
 import ExText from "./_components/ExText";
 
