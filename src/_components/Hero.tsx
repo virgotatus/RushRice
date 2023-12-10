@@ -1,3 +1,5 @@
+import { SideTitle } from "./constants";
+
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row">
@@ -11,12 +13,9 @@ const Hero = () => {
         >
           Moving <span className="emphasis">Tricycle </span>
           with Cooking <span className="emphasis">Fried Rice</span>.<br></br>{" "}
-          It's <span className="emphasis">City Living </span>Room.
+          It's a <span className="emphasis">City's Living </span>Room.
         </h1>
-        <p className="text-2xl text-slate-200">
-          Transform freedom and love by fire, hustle and meals.<br></br> Warm
-          stomach and heart on People way home.
-        </p>
+        <p className="text-3xl my-3 text-slate-200">{SideTitle}</p>
         <div className="mt-5">
           <button
             className=" bg-[--color-accent] w-fit
@@ -27,7 +26,7 @@ const Hero = () => {
         </div>
       </section>
       <div className="flex items-center">
-        <img src="/screen-removebg-preview.png" alt="hero" />
+        <img src="/screen-removebg.webp" alt="hero" />
       </div>
     </div>
   );

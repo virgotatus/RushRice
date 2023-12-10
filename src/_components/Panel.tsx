@@ -6,16 +6,16 @@ const Panel = () => {
     <div className="mx-0 my-24 block">
       <div className={style.panelBg} />
       <h1 className="py-24 text-5xl text-slate-100 flex justify-center font-semibold ">
-        User-firendly Control Panel
+        Customer-firendly Roadside Stands. Nice Steet Vendor.
       </h1>
       <div className="flex flex-col lg:flex-row gap-3">
         <div className="flex justify-center">
-          <img className="w-3/4" src="/cooking-rice.jpg" alt="cooking rice" />
+          <img className="w-3/4" src="/cooking-rice.webp" alt="cooking rice" />
         </div>
         <div className="my-12 flex flex-col justify-center lg:justify-start">
-          <Media heading="Manage your Menu" />
-          <Media heading="Strong Power" />
-          <Media heading="Give and Take" />
+          <Media heading="Manage your Menu" icon_src="/baozi-01.svg" />
+          <Media heading="Strong Power" icon_src="/jitui-01.svg" />
+          <Media heading="Give and Take" icon_src="/kele-01.svg" />
         </div>
       </div>
     </div>

@@ -5,9 +5,16 @@ interface Props {
   icon_src: string;
   img_src: string;
   direction?: boolean;
+  description: string;
 }
 
-const FeatureCard = ({ heading, icon_src, img_src, direction }: Props) => {
+const FeatureCard = ({
+  heading,
+  icon_src,
+  img_src,
+  direction,
+  description,
+}: Props) => {
   return (
     <div
       className={
@@ -19,7 +26,7 @@ const FeatureCard = ({ heading, icon_src, img_src, direction }: Props) => {
         }`
       }
     >
-      <section className="mt-24 flex flex-col justify-start">
+      <section className="grow mt-24 flex flex-col justify-start">
         <img
           src={icon_src}
           width="50px"
@@ -28,14 +35,10 @@ const FeatureCard = ({ heading, icon_src, img_src, direction }: Props) => {
         <h1 className="text-7xl text-[--color-headings] font-bold leading-snug">
           {heading}
         </h1>
-        <p className="text-2xl text-slate-400 mb-10">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-          architecto iste vel repudiandae libero porro totam illo. Provident,
-          culpa omnis.
-        </p>
+        <p className="text-3xl text-slate-400 mb-10">{description}</p>
         <LinkArrow />
       </section>
-      <section className="mt-24">
+      <section className="mt-24 max-w-[600px] ">
         <div className="border-dotted border-sky-200 border-8 relative shadow-2xl">
           <img src={img_src} alt=" Menu" />
         </div>

@@ -19,7 +19,7 @@ const Plan = () => {
       <PayCard
         plan="All in one Plus"
         price={50}
-        description="All in one university"
+        description="All in one universe"
         features={[
           "Fired Rice",
           "Fried Dried Noodles",

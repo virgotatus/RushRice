@@ -1,13 +1,14 @@
 interface MediaProps {
   heading: string;
+  icon_src: string;
 }
 
-const Media = ({ heading }: MediaProps) => {
+const Media = ({ heading, icon_src }: MediaProps) => {
   return (
     <div className="flex flex-row">
       <img
         className="w-16 f-1 relative -top-14"
-        src="/binggan-01.svg"
+        src={icon_src}
         alt="cooking rice"
       />
       <div>

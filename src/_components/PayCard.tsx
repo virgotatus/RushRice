@@ -33,15 +33,15 @@ const PayCard = ({ plan, price, description, features, popular }: Props) => {
         </div>
       </div>
       <div id="pay_card_body" className=" m-12 flex flex-col">
-        <div>
+        <div className="h-64">
           <ul className={style.payCardList}>
             {features.map((feature) => (
               <li className={style.payCardListItem}>{feature}</li>
             ))}
           </ul>
         </div>
-        <div className="m-12 w-full mb-16 items-center">
-          <button className="border-2 border-[--color-headings] rounded-full px-32 py-4 uppercase">
+        <div className="m-12 w-3/4 items-center whitespace-nowrap flex justify-center">
+          <button className="border-2 border-[--color-headings] px-16 py-4 rounded-full uppercase">
             Buy Now
           </button>
         </div>

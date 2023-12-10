@@ -3,7 +3,7 @@ const Testimonial = () => {
     <div className="my-48 px-12 py-24 shadow-2xl rounded-lg ">
       <div className="grid lg:grid-cols-2 md:grid-cols-1">
         <div className="relative">
-          <img className="w-full" src="/showcase.jpg" alt="fried rice" />
+          <img className="w-full" src="/showcase.webp" alt="fried rice" />
           <span
             className="absolute -right-8 top-1/3 inline-flex w-16 h-16
               justify-center items-center text-5xl 

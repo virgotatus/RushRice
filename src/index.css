@@ -51,8 +51,9 @@
     color: var(--color-headings);
   }
   h1:hover .emphasis {
-    text-decoration-line: underline ;
-    text-decoration-thickness: 6px;
+    text-decoration-line: underline  ;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
   }
 
   .clearfix {

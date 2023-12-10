@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="basis-1/3">
               <h2 className="text-slate-50 text-2xl font-semibold">Social</h2>
               <ul className="list text-base flex flex-col underline text-slate-50">
-                <li className="list__item">Facebook</li>
+                <li className="list__item">Wechat</li>
                 <li className="list__item">Twitter</li>
                 <li className="list__item">Instagram</li>
               </ul>

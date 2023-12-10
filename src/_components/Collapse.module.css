@@ -1,5 +1,5 @@
 .navfix {
-  @apply w-full;
+  @apply w-full z-50;
   position: fixed;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .navList {
-  @apply lg:flex lg:flex-row lg:gap-3 ;
+  @apply lg:flex lg:flex-row lg:gap-6 ;
 }
 
 .collapse__Expanded .navContanter {

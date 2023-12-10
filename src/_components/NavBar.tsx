@@ -4,14 +4,7 @@ import Logo from "./Logo";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
-  const navItems = [
-    "Home",
-    "Place&Time",
-    "Menu",
-    "Opration",
-    "Document",
-    "About",
-  ];
+  const navItems = ["Home", "Location&Time", "Menu", "Documents", "About"];
   return (
     <div className={style.navfix}>
       <nav
@@ -51,7 +44,7 @@ const NavBar = () => {
               <li className="my-3 mx-0">
                 <a
                   href="#"
-                  className="flex justify-end hover:underline font-normal text-xl text-slate-50"
+                  className="flex justify-end hover:underline font-semibold text-2xl text-slate-50"
                 >
                   {item}
                 </a>

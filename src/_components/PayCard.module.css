@@ -13,10 +13,9 @@
   position: relative;
 }
 .popular .payCardHeader::before {
-  content: url("../assets/react.svg");
+  content: url("../assets/shengdanliwu.svg");
   display: inline-block;
   position: absolute;
-  width: 36px;
   top: 0;
   right: 10%;
   background-color: transparent;
