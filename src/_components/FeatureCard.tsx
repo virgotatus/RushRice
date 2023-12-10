@@ -27,11 +27,9 @@ const FeatureCard = ({
       }
     >
       <section className="grow mt-24 flex flex-col justify-start">
-        <img
-          src={icon_src}
-          width="50px"
-          className="bg-slate-200 rounded-xl p-2"
-        ></img>
+        <svg className="w-[50px] h-[50px] bg-slate-200 rounded-xl p-2">
+          <use href={`/svg_sprite.svg#${icon_src}`}></use>
+        </svg>
         <h1 className="text-7xl text-[--color-headings] font-bold leading-snug">
           {heading}
         </h1>

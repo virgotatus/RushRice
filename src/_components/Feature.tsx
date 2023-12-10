@@ -5,12 +5,10 @@ const Feature = () => {
   return (
     <>
       <div className="flex flex-col bg-orange-50 lg:flex-row gap-6 mt-48">
-        <section className="flex flex-col justify-start">
-          <img
-            src="/niupai-01.svg"
-            width="50px"
-            className="bg-slate-200 rounded-xl p-2"
-          ></img>
+        <section className="flex flex-col justify-start mt-24">
+          <svg className="w-[50px] h-[50px] bg-slate-200 rounded-xl p-2">
+            <use href="/svg_sprite.svg#niupai-01"></use>
+          </svg>
           <h1 className="text-7xl text-[--color-headings] font-bold leading-snug">
             Super amazing to Taste
           </h1>
@@ -33,14 +31,14 @@ const Feature = () => {
       </div>
       <FeatureCard
         heading="Nice Cheap Discount"
-        icon_src="/jiandan-01.svg"
+        icon_src="jiandan-01"
         direction={false}
         img_src="/cooking-rice.gif"
         description="进群抽红包手气减五元,快递小哥减五元。"
       />
       <FeatureCard
         heading="Nice People, Talk small"
-        icon_src="/pijiu-01.svg"
+        icon_src="pijiu-01"
         direction={true}
         img_src="/beer.webp"
         description="有趣的人,有趣的事,有趣的饭,有趣的酒。老板特别热情，特别爱分享生活，来的人也很有趣，蹦蹦跳跳快快乐乐吃饭"

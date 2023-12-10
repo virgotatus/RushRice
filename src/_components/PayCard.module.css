@@ -1,5 +1,5 @@
 .payCardList  {
-  list-style-image: url("../assets/tick-svgrepo-com.svg");
+  list-style-image: url("/public/tick.svg");
   padding-left: 3rem;
 }
 
@@ -13,7 +13,7 @@
   position: relative;
 }
 .popular .payCardHeader::before {
-  content: url("../assets/shengdanliwu.svg");
+  content: url("/public/shengdanliwu.svg");
   display: inline-block;
   position: absolute;
   top: 0;

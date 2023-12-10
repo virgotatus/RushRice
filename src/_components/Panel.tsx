@@ -13,9 +13,9 @@ const Panel = () => {
           <img className="w-3/4" src="/cooking-rice.webp" alt="cooking rice" />
         </div>
         <div className="my-12 flex flex-col justify-center lg:justify-start">
-          <Media heading="Manage your Menu" icon_src="/baozi-01.svg" />
-          <Media heading="Strong Power" icon_src="/jitui-01.svg" />
-          <Media heading="Give and Take" icon_src="/kele-01.svg" />
+          <Media heading="Manage your Menu" icon_src="baozi-01" />
+          <Media heading="Strong Power" icon_src="jitui-01" />
+          <Media heading="Give and Take" icon_src="kele-01" />
         </div>
       </div>
     </div>
