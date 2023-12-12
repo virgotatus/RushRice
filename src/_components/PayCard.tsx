@@ -40,7 +40,7 @@ const PayCard = ({ plan, price, description, features, popular }: Props) => {
             ))}
           </ul>
         </div>
-        <div className="m-12 w-3/4 items-center whitespace-nowrap flex justify-center">
+        <div className="inline-block m-12 w-full items-center whitespace-nowrap justify-center">
           <button className="border-2 border-[--color-headings] px-16 py-4 rounded-full uppercase">
             Buy Now
           </button>

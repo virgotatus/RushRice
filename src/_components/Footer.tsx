@@ -9,32 +9,34 @@ const Footer = () => {
   w-full bg-stone-950"
         />
         <div className="mx-24 y-24 flex flex-row items-center">
-          <div className="mr-48">
+          <div className="shrink">
             <Logo />
           </div>
-          <div className="flex-1 ml-10 flex flex-row">
+          <div className="grow ml-10 flex">
             <div className="basis-1/3">
               <h2 className="text-slate-50 text-2xl font-semibold">About</h2>
-              <ul className="list text-base flex flex-col underline text-slate-50">
-                <li className="list__item">About Us</li>
-                <li className="list__item">Our Mission</li>
-                <li className="list__item">Our Vision</li>
+              <ul className="list text-base flex flex-col  text-slate-50">
+                <li className="list__item hover:underline">About Us</li>
+                <li className="list__item hover:underline">Our Mission</li>
+                <li className="list__item hover:underline">Our Vision</li>
               </ul>
             </div>
             <div className="basis-1/3">
               <h2 className="text-slate-50 text-2xl font-semibold">Contact</h2>
-              <ul className="list text-base flex flex-col underline text-slate-50">
-                <li className="list__item">Contact Us</li>
-                <li className="list__item">Support</li>
-                <li className="list__item">Locations</li>
+              <ul className="list text-base flex flex-col text-slate-50">
+                <li className="list__item hover:underline">Contact Us</li>
+                <li className="list__item hover:underline">Support</li>
+                <li className="list__item hover:underline">Locations</li>
               </ul>
             </div>
             <div className="basis-1/3">
               <h2 className="text-slate-50 text-2xl font-semibold">Social</h2>
-              <ul className="list text-base flex flex-col underline text-slate-50">
-                <li className="list__item">Wechat</li>
-                <li className="list__item">Twitter</li>
-                <li className="list__item">Instagram</li>
+              <ul className="list text-base flex flex-col text-slate-50">
+                <li className="list__item hover:underline">
+                  Wechat: 18967834347
+                </li>
+                <li className="list__item hover:underline">Twitter</li>
+                <li className="list__item hover:underline">Instagram</li>
               </ul>
             </div>
           </div>

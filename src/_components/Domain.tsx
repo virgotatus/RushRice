@@ -14,21 +14,21 @@ const Domain = () => {
         </p>
       </section>
       <section className="text-center mx-20">
-        <div className="border-0 shadow-lg rounded-full sm:w-full w-3/4 flex mx-auto">
+        <div className="border-1 border-solid shadow-lg rounded-full sm:w-full w-auto flex mx-auto">
           <input
-            placeholder="eat..."
-            className="px-8 flex-1 outline-0 rounded-full focus:border-0"
+            placeholder="eat something..."
+            className=" text-[--color-primary] px-8 grow outline-0 rounded-full"
           ></input>
           <button
             className=" rounded-full bg-[--color-accent] 
-               px-12 py-4 uppercase
+               px-8 py-2 uppercase
               text-[white]
               "
           >
             <div className="flex items-center ">
               <svg
-                width="50px"
-                height="50px"
+                width="40px"
+                height="40px"
                 viewBox="0 0 24 24"
                 fill="rgb(195,25,26)"
                 xmlns="http://www.w3.org/2000/svg"
