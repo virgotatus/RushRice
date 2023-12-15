@@ -60,6 +60,12 @@
     @apply after:block after:clear-both;
   }
 
+  .gridDomain {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
   .list {
     color : var(--color-headings);
     padding-left: 0;

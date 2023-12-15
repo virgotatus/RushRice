@@ -26,7 +26,9 @@ const Hero = () => {
         </div>
       </section>
       <div className="flex items-center">
-        <img src="/screen-removebg.webp" alt="hero" />
+        <picture>
+          <img src="/screen-removebg.webp" alt="hero" />
+        </picture>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const Domain = () => {
           </button>
         </div>
         <div className="mt-12">
-          <ul className="inline-grid gap-3 sm:grid-cols-1 grid-cols-2 lg:grid-cols-4">
+          <ul className="gridDomain  ">
             <li>
               <a href="$" className="btn__secondary">
                 Fried Rice
