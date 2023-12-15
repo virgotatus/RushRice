@@ -38,7 +38,7 @@ const FeatureCard = ({
       </section>
       <section className="mt-24 max-w-[600px] ">
         <div className="border-dotted border-sky-200 border-8 relative shadow-2xl">
-          <img src={img_src} alt=" Menu" />
+          <img className="w-full " src={img_src} alt=" Menu" />
         </div>
       </section>
     </div>

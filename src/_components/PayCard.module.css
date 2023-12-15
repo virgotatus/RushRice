@@ -9,6 +9,23 @@
   font-size: 1.6rem;
 }
 
+.payCardContainer {
+  @apply shadow-lg;
+}
+
+.payCardContainer.popular { 
+  transform: scale(1.1);
+}
+
+.payCardContainer:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.payCardContainer.popular:hover { 
+  @apply scale-[1.15] transition-transform duration-300;
+}
+
 .payCardHeader {
   position: relative;
 }

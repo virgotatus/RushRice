@@ -10,7 +10,9 @@ interface Props {
 
 const PayCard = ({ plan, price, description, features, popular }: Props) => {
   return (
-    <div className={(popular ? style.popular : "") + " w-2/3 shadow-lg"}>
+    <div
+      className={style.payCardContainer + " " + (popular ? style.popular : "")}
+    >
       <div
         id="pay_card_header"
         className={
