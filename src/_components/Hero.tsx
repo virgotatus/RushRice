@@ -10,6 +10,7 @@ const Hero = () => {
         <h1
           className="text-7xl text-slate-100 font-bold leading-snug
         "
+          data-aos="zoom-in"
         >
           Moving <span className="emphasis">Tricycle </span>
           with Cooking <span className="emphasis">Fried Rice</span>.<br></br>{" "}
@@ -25,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
       </section>
-      <div className="flex items-center">
+      <div className="flex items-center" data-aos="zoom-in">
         <picture>
           <img src="/screen-removebg.webp" alt="hero" />
         </picture>

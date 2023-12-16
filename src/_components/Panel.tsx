@@ -3,7 +3,7 @@ import style from "./Panel.module.css";
 
 const Panel = () => {
   return (
-    <div className="mx-0 my-24 block">
+    <div className="mx-0 my-24 block" data-aos="slide-up">
       <div className={style.panelBg} />
       <h1 className="py-24 text-5xl text-slate-100 flex justify-center font-semibold ">
         Customer-firendly Roadside Stands. Nice Steet Vendor.

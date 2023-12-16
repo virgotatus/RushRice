@@ -26,7 +26,10 @@ const FeatureCard = ({
         }`
       }
     >
-      <section className="grow mt-24 flex flex-col justify-start">
+      <section
+        data-aos="fade-left"
+        className="grow mt-24 flex flex-col justify-start"
+      >
         <svg className="w-[50px] h-[50px] bg-slate-200 rounded-xl p-2">
           <use href={`/svg_sprite.svg#${icon_src}`}></use>
         </svg>
@@ -36,7 +39,7 @@ const FeatureCard = ({
         <p className="text-3xl text-slate-400 mb-10">{description}</p>
         <LinkArrow />
       </section>
-      <section className="mt-24 max-w-[600px] ">
+      <section data-aos="fade-right" className="mt-24 max-w-[600px] ">
         <div className="border-dotted border-sky-200 border-8 relative shadow-2xl">
           <img className="w-full " src={img_src} alt=" Menu" />
         </div>

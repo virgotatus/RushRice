@@ -1,6 +1,9 @@
 const Testimonial = () => {
   return (
-    <div className="my-48 px-12 py-24 shadow-2xl rounded-lg ">
+    <div
+      data-aos="zoom-in"
+      className="my-48 px-12 py-24 shadow-2xl rounded-lg "
+    >
       <div className="grid lg:grid-cols-2 md:grid-cols-1">
         <div className="relative">
           <img className="w-full" src="/showcase.webp" alt="fried rice" />
