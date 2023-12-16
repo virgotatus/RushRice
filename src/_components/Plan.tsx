@@ -2,7 +2,7 @@ import PayCard from "./PayCard";
 
 const Plan = () => {
   return (
-    <div className="mt-60 flex flex-col gap-12 lg:flex-row items-center justify-center">
+    <div className="mt-60 flex flex-col gap-24 lg:gap-12 lg:flex-row items-center justify-center">
       <PayCard
         plan="Dish"
         price={20}

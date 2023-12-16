@@ -6,8 +6,8 @@ const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
   const navItems = ["Home", "Location&Time", "Menu", "Documents", "About"];
   return (
-    <div className={style.navfix}>
-      <nav
+    <nav className={style.navfix}>
+      <div
         className={`${style.navbar} ${
           expanded ? "" : style.collapse__Expanded
         }`}
@@ -15,7 +15,7 @@ const NavBar = () => {
         <header className={style.navHeader}>
           <Logo />
           <div
-            className={style.collapseToggler}
+            className={style.navToggler}
             onClick={() => {
               setExpanded(!expanded);
             }}
@@ -38,10 +38,10 @@ const NavBar = () => {
             </svg>
           </div>
         </header>
-        <section className={style.navContanter}>
+        <body className={style.navContanter}>
           <ul className={style.navList}>
             {navItems.map((item) => (
-              <li className="my-3 mx-0">
+              <li className="mt-3 ">
                 <a
                   href="#"
                   className="flex justify-end hover:underline font-semibold text-2xl text-slate-50"
@@ -51,9 +51,9 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-        </section>
-      </nav>
-    </div>
+        </body>
+      </div>
+    </nav>
   );
 };
 

@@ -44,7 +44,7 @@
   
   a {
     text-decoration: none;
-  }mx-24
+  }
   h1, h2, h3 {
     @apply capitalize;
     transition: transform 0.5s ease-in-out;

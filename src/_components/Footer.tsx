@@ -1,43 +1,69 @@
 import Logo from "./Logo";
+import { CollapseHeader, CollapseBody } from "./Collapse";
+import style from "./Collapse.module.css";
+import { useState } from "react";
 
 const Footer = () => {
+  const [aboutExpanded, setAboutExpanded] = useState(true);
+  const [contactExpanded, setContactExpanded] = useState(true);
+  const [socialExpanded, setSocialExpanded] = useState(true);
   return (
     <>
-      <footer className="my-24 relative">
+      <footer className="mt-24 relative">
         <div
           className="pointer-events-none absolute -top-64 left-0 -z-10 h-[350px]
   w-full bg-stone-950"
         />
-        <div className="mx-24 y-24 flex flex-row items-center">
+        <div className="mx-24 y-24 flex flex-row items-center max-md:flex-col-reverse">
           <div className="shrink">
             <Logo />
           </div>
-          <div className="grow ml-10 flex">
-            <div className="basis-1/3">
-              <h2 className="text-slate-50 text-2xl font-semibold">About</h2>
-              <ul className="list text-base flex flex-col  text-slate-50">
-                <li className="list__item hover:underline">About Us</li>
-                <li className="list__item hover:underline">Our Mission</li>
-                <li className="list__item hover:underline">Our Vision</li>
-              </ul>
+          <div className="grow ml-10 flex max-md:flex-col gap-3">
+            <div
+              className={`${
+                aboutExpanded ? "" : style.collapse__Expanded
+              } basis-1/3`}
+            >
+              <header className="flex items-center gap-3">
+                <h2 className="text-slate-50 text-2xl font-semibold">About</h2>
+                <CollapseHeader
+                  togglerExpanded={setAboutExpanded}
+                  state={aboutExpanded}
+                />
+              </header>
+              <CollapseBody items={["Our Mission", "Our Value", "About Us"]} />
             </div>
-            <div className="basis-1/3">
-              <h2 className="text-slate-50 text-2xl font-semibold">Contact</h2>
-              <ul className="list text-base flex flex-col text-slate-50">
-                <li className="list__item hover:underline">Contact Us</li>
-                <li className="list__item hover:underline">Support</li>
-                <li className="list__item hover:underline">Locations</li>
-              </ul>
+            <div
+              className={`${
+                contactExpanded ? "" : style.collapse__Expanded
+              } basis-1/3`}
+            >
+              <header className="flex items-center gap-3">
+                <h2 className="text-slate-50 text-2xl font-semibold">
+                  Contact
+                </h2>
+                <CollapseHeader
+                  togglerExpanded={setContactExpanded}
+                  state={contactExpanded}
+                />
+              </header>
+              <CollapseBody items={["Email", "Location", "Time"]} />
             </div>
-            <div className="basis-1/3">
-              <h2 className="text-slate-50 text-2xl font-semibold">Social</h2>
-              <ul className="list text-base flex flex-col text-slate-50">
-                <li className="list__item hover:underline">
-                  Wechat: 18967834347
-                </li>
-                <li className="list__item hover:underline">Twitter</li>
-                <li className="list__item hover:underline">Instagram</li>
-              </ul>
+            <div
+              className={`${
+                socialExpanded ? "" : style.collapse__Expanded
+              } basis-1/3`}
+            >
+              <header className="flex items-center gap-3">
+                <h2 className="text-slate-50 text-2xl font-semibold">
+                  Social Media
+                </h2>
+                <CollapseHeader
+                  togglerExpanded={setSocialExpanded}
+                  state={socialExpanded}
+                />
+              </header>
+              <CollapseBody items={["Wechat", "Telegram", "Email"]} />
             </div>
           </div>
         </div>
