@@ -8,7 +8,6 @@ import Badge from "./_components/Badge";
 import Lists from "./_components/(ex)/Lists";
 import Buttons from "./_components/(ex)/Buttons";
 import Testimonial from "./_components/Testimonial";
-import Collapse from "./_components/Collapse";
 import ExText from "./_components/ExText";
 import Plan from "./_components/Plan";
 
@@ -29,7 +28,6 @@ const Example = () => {
       <Buttons />
       <Plan />
       <Testimonial />
-      <Collapse heading={"item1"} items={["Home", "Weding Party", "Travel"]} />
     </>
   );
 };
