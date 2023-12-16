@@ -1,4 +1,4 @@
-import style from "./collapse.module.css";
+import style from "./Collapse.module.css";
 interface Props {
   togglerExpanded: (state: boolean) => void;
   state: boolean;
