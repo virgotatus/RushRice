@@ -24,13 +24,13 @@ const Footer = () => {
                 aboutExpanded ? "" : style.collapse__Expanded
               } basis-1/3`}
             >
-              <header className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <h2 className="text-slate-50 text-2xl font-semibold">About</h2>
                 <CollapseHeader
                   togglerExpanded={setAboutExpanded}
                   state={aboutExpanded}
                 />
-              </header>
+              </div>
               <CollapseBody items={["Our Mission", "Our Value", "About Us"]} />
             </div>
             <div
@@ -38,7 +38,7 @@ const Footer = () => {
                 contactExpanded ? "" : style.collapse__Expanded
               } basis-1/3`}
             >
-              <header className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <h2 className="text-slate-50 text-2xl font-semibold">
                   Contact
                 </h2>
@@ -46,7 +46,7 @@ const Footer = () => {
                   togglerExpanded={setContactExpanded}
                   state={contactExpanded}
                 />
-              </header>
+              </div>
               <CollapseBody items={["Email", "Location", "Time"]} />
             </div>
             <div
@@ -54,7 +54,7 @@ const Footer = () => {
                 socialExpanded ? "" : style.collapse__Expanded
               } basis-1/3`}
             >
-              <header className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <h2 className="text-slate-50 text-2xl font-semibold">
                   Social Media
                 </h2>
@@ -62,7 +62,7 @@ const Footer = () => {
                   togglerExpanded={setSocialExpanded}
                   state={socialExpanded}
                 />
-              </header>
+              </div>
               <CollapseBody items={["Wechat", "Telegram", "Email"]} />
             </div>
           </div>
