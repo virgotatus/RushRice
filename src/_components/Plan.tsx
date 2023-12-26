@@ -1,33 +1,43 @@
 import PayCard from "./PayCard";
+import { useTranslation } from "react-i18next";
 
 const Plan = () => {
+  const { t } = useTranslation();
   return (
     <div
       data-aos="fade-up"
       className="mt-60 flex flex-col gap-24 lg:gap-12 lg:flex-row items-center justify-center"
     >
       <PayCard
-        plan="Dish"
+        plan={t("plan-1")}
         price={20}
-        description="Try Try. give me a bite"
-        features={["Fried Rice", "Great Beef", "fantacy porper"]}
+        description={t("plan-try")}
+        features={[
+          t("plan-try-feature1"),
+          t("plan-try-feature2"),
+          t("plan-try-feature3"),
+        ]}
       />
       <PayCard
-        plan="Package"
+        plan={t("plan-2")}
         price={30}
         popular={true}
-        description="Easy start on the cloud"
-        features={["Rice or Noodles", "Fish Cake", "Coke Cola"]}
+        description={t("plan-package")}
+        features={[
+          t("plan-package-feature1"),
+          t("plan-package-feature2"),
+          t("plan-package-feature3"),
+        ]}
       />
       <PayCard
-        plan="All in one Plus"
+        plan={t("plan-3")}
         price={50}
-        description="All in one universe"
+        description={t("plan-all")}
         features={[
-          "Fired Rice",
-          "Fried Dried Noodles",
-          "Fish Cake",
-          "Coke Cola",
+          t("plan-all-feature1"),
+          t("plan-all-feature2"),
+          t("plan-all-feature3"),
+          t("plan-all-feature4"),
         ]}
       />
     </div>

@@ -1,17 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const Domain = () => {
+  const { t } = useTranslation();
   return (
     <div className="mt-96 lg:mt-72">
       <section className="text-center">
         <h1 className="text-[--color-headings] text-5xl font-semibold">
-          {" "}
-          Starting at ￥20 per Dish
+          {t("domain-start")} ￥20 {t("domain-dish")}
         </h1>
-        <p className="text-slate-700 my-8">
-          {" "}
-          beef, rice, Sichuan bean , Wanderful porper gam, Mushroom, Fantastic
-          smell
-          <br></br> 移动炒饭摊，城市会客厅
-        </p>
+        <p className="text-slate-700 my-8">{t("domain-plate")}</p>
       </section>
       <section className="text-center max-w-6xl mx-auto ">
         <div className="border-1 border-solid shadow-lg rounded-full flex bg-white p-1">
@@ -22,8 +19,7 @@ const Domain = () => {
           <button
             className="inline-flex rounded-full bg-[--color-accent] 
                px-8 py-2 uppercase
-              text-[white] items-center 
-              "
+              text-[white] items-center"
           >
             <svg
               width="40px"
@@ -57,29 +53,29 @@ const Domain = () => {
                 stroke-width="2"
               />
             </svg>
-            <span>order</span>
+            <span>{t("domain-order")}</span>
           </button>
         </div>
         <div className="mt-12">
           <ul className="gridDomain  ">
             <li>
               <a href="$" className="btn__secondary">
-                Fried Rice
+                {t("domain-fried")}
               </a>
             </li>
             <li>
               <a href="#" className="btn__secondary">
-                Fried Dried Noodles
+                {t("domain-noodle")}
               </a>
             </li>
             <li>
               <a href="#" className="btn__secondary">
-                Wenzhou Fish Cake
+                {t("domain-cake")}
               </a>
             </li>
             <li>
               <a href="#" className="btn__secondary">
-                Coke Cola & Beer
+                {t("domain-drink")}
               </a>
             </li>
           </ul>

@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Testimonial = () => {
+  const { t } = useTranslation();
   return (
     <div
       data-aos="zoom-in"
@@ -17,7 +20,7 @@ const Testimonial = () => {
         </div>
         <blockquote className="flex-1 ml-8">
           <p className="my-6 font-light italic columns-auto">
-            "太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了.太好吃了太好吃了."
+            {t("panel-image-note")}
           </p>
           <footer className="justify-end mt-12">
             <span className="bold">Jeffrey 面包 Matt 等118位群友</span>

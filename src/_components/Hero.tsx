@@ -1,28 +1,24 @@
-import { SideTitle } from "./constants";
-
+import { useTranslation } from "react-i18next";
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col lg:flex-row">
-      <section
-        className="mt-48 flex text-center flex-col
-       gap-5 lg:justify-start"
-      >
+      <section className="mt-48 flex text-center flex-col gap-5 lg:justify-start">
         <h1
-          className="text-7xl text-slate-100 font-bold leading-snug
-        "
+          className="text-7xl text-slate-100 font-bold leading-snug"
           data-aos="zoom-in"
         >
-          Moving <span className="emphasis">Tricycle </span>
-          with Cooking <span className="emphasis">Fried Rice</span>.<br></br>{" "}
-          It's a <span className="emphasis">City's Living </span>Room.
+          {t("hero-mov")} <span className="emphasis">{t("hero-tri")} </span>
+          {t("hero-cooking")}{" "}
+          <span className="emphasis">{t("hero-fried")}</span>
+          <br></br> {t("hero-it")}{" "}
+          <span className="emphasis">{t("hero-city")} </span>
+          {t("hero-room")}
         </h1>
-        <p className="text-3xl my-3 text-slate-200">{SideTitle}</p>
+        <p className="text-3xl my-3 text-slate-200">{t("hero-para")}</p>
         <div className="mt-5">
-          <button
-            className=" bg-[--color-accent] w-fit
-          border-0 px-12 py-4 rounded-full text-slate-50 uppercase"
-          >
-            buy one
+          <button className=" bg-[--color-accent] w-fit border-0 px-12 py-4 rounded-full text-slate-50 uppercase">
+            {t("buy-btn")}
           </button>
         </div>
       </section>

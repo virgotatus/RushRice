@@ -1,7 +1,9 @@
 import style from "./linkArrow.module.css";
+import { useTranslation } from "react-i18next";
 
 const LinkArrow = () => {
-  return <div className={style.linkArrow}>Learn More</div>;
+  const { t } = useTranslation();
+  return <div className={style.linkArrow}>{t("feature-learn")}</div>;
 };
 
 export default LinkArrow;

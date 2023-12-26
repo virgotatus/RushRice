@@ -2,6 +2,7 @@ import Logo from "./Logo";
 import { CollapseHeader, CollapseBody } from "./Collapse";
 import style from "./Collapse.module.css";
 import { useState } from "react";
+import { Trans } from "react-i18next";
 
 const Footer = () => {
   const [aboutExpanded, setAboutExpanded] = useState(true);
@@ -40,7 +41,7 @@ const Footer = () => {
             >
               <div className="flex items-center gap-3">
                 <h2 className="text-slate-50 text-2xl font-semibold">
-                  Contact
+                  <Trans i18nKey="author"></Trans>
                 </h2>
                 <CollapseHeader
                   togglerExpanded={setContactExpanded}

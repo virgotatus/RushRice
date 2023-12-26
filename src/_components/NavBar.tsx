@@ -1,10 +1,19 @@
 import { useState } from "react";
 import style from "./Collapse.module.css";
 import Logo from "./Logo";
+import { useTranslation } from "react-i18next";
+import LangSelect from "./LangSelect";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
-  const navItems = ["Home", "Location&Time", "Menu", "Documents", "About"];
+  const { t } = useTranslation();
+  const navItems = [
+    "nav-home",
+    "nav-location",
+    "nav-menu",
+    "nav-documents",
+    "nav-about",
+  ];
   return (
     <nav className={style.navfix}>
       <div
@@ -14,6 +23,7 @@ const NavBar = () => {
       >
         <header className={style.navHeader}>
           <Logo />
+          <LangSelect />
           <div
             className={style.navToggler}
             onClick={() => {
@@ -46,7 +56,7 @@ const NavBar = () => {
                   href="#"
                   className="flex justify-end hover:underline font-semibold text-2xl text-slate-50"
                 >
-                  {item}
+                  {t(item)}
                 </a>
               </li>
             ))}

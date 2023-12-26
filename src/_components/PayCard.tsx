@@ -1,5 +1,6 @@
 import Badge from "./Badge";
 import style from "./PayCard.module.css";
+import { useTranslation } from "react-i18next";
 interface Props {
   plan: string;
   price: number;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const PayCard = ({ plan, price, description, features, popular }: Props) => {
+  const { t } = useTranslation();
   return (
     <div
       className={style.payCardContainer + " " + (popular ? style.popular : "")}
@@ -24,9 +26,9 @@ const PayCard = ({ plan, price, description, features, popular }: Props) => {
           <p className="font-bold text-white">{plan}</p>
           <div className="inline-flex items-center gap-3 mt-5 mb-5">
             <span className="text-7xl text-white">￥{price} </span>
-            <span className="text-white">/month </span>
+            <span className="text-white">/{t("plan-month")} </span>
             <span className=" text-[12px] px-2 py-1">
-              <Badge text="20% OFF" />
+              <Badge text={`20% ${t("plan-off")}`} />
             </span>
           </div>
           <p className="text-slate-300 opacity-60 text-md whitespace-nowrap">
@@ -44,7 +46,7 @@ const PayCard = ({ plan, price, description, features, popular }: Props) => {
         </div>
         <div className="inline-block m-12 w-full items-center whitespace-nowrap justify-center">
           <button className="border-2 border-[--color-headings] px-16 py-4 rounded-full uppercase">
-            Buy Now
+            {t("buy-btn")}
           </button>
         </div>
       </div>
